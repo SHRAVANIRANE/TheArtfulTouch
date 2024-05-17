@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  width: 100%;
+  height: 100%;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  right: 0;
+  left: 0;
+  position: relative;
+  box-shadow: 0 0 20px rgba(74, 70, 70, 0.3);
+  z-index: 1000;
+  padding: 5px 0;
+}
+nav .navbar .logo img {
+  width: 110px;
+}
+nav .navbar .nav-text ul {
+  display: flex;
+}
+nav .navbar .nav-text ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+nav .navbar .nav-text ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 550;
+  font-size: 17px;
+  transition: 0.1s;
+}
+nav .navbar .nav-text ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  display: block;
+  background-color: orange;
+  transition: 0.2s linear;
+}
+nav .navbar .nav-text ul li a:hover::after {
+  width: 100%;
+}
+nav .navbar .nav-text ul li a:hover {
+  color: orange;
+}
+nav .navbar .icon i {
+  font-size: 18px;
+  color: #000;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav .navbar .icon i:hover {
+  color: #fac001;
+}
+
+/* first section */
+section {
+  width: 100%;
+}
+section .main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+section .main-section .image img {
+  width: 650px;
+  height: 600px;
+}
+
+section .main-section .main-text {
+  position: relative;
+  margin-right: 30px;
+}
+section .main-section .main-text h1 {
+  color: orange;
+  font-size: 60px;
+  position: relative;
+  bottom: 10px;
+  font-family: mv boli;
+  width: fit-content;
+}
+section .main-section .main-text p {
+  line-height: 22px;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+section .main-section .main-text button {
+  padding: 14px;
+  font-size: 15px;
+  margin: 25px 0;
+  background-color: orange;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+}
+section .main-section .main-text button i {
+  margin-left: 6px;
+  transition: 0.3s;
+}
+section .main-section .main-text button:hover i {
+  transform: translate(7px);
+}
+.second-section {
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+}
+.second-section .second-text {
+  font-size: 18px;
+}
+.collab {
+  text-align: center;
+  margin-top: 19px;
+}
+.second-section .second-text .collab {
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second-section .second-text h1 {
+  font-family: mv boli;
+}
+.second-section .second-text h1 span {
+  position: relative;
+  font-family: mv boli;
+  margin-left: 10px;
+  color: orange;
+}
+.second-section .second-text h1 span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: orange;
+  display: block;
+  position: relative;
+}
+.collab-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  margin: 80px auto;
+}
+.card {
+  transition: 0.3s;
+}
+.collab-card .card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+}
+.collab-card .card:hover {
+  transform: scale(1.04);
+}
+.collab-card .card h1 {
+  color: orange;
+  font-size: 30px;
+  margin: 18px 0;
+}
+.collab-card .card {
+  text-align: center;
+  width: 350px;
+  height: 485px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin: 0 8px;
+}
+
+/* third-section */
+.third-section {
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+}
+.third-section .third {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.third-section .collab {
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.third-section h1 {
+  font-size: 30px;
+}
+.third-section h1 span {
+  position: relative;
+  font-family: mv boli;
+  margin-left: 15px;
+  color: orange;
+}
+.third-section h1 span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: orange;
+  display: block;
+  position: relative;
+}
+.third-section .third .image img {
+  width: 650px;
+  height: 650px;
+}
+.third-section .third .text {
+  font-size: 18px;
+  padding: 60px;
+}
+
+/* fourth section */
+.fourth-section {
+  width: 100%;
+  height: 120vh;
+  padding: 50px;
+}
+.fourth-section .fourth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fourth-section .collab {
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fourth-section h1 {
+  font-size: 35px;
+}
+.fourth-section h1 span {
+  position: relative;
+  font-family: mv boli;
+  margin-left: 15px;
+  color: orange;
+}
+.fourth-section h1 span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: orange;
+  display: block;
+  position: relative;
+}
+.fourth-section .fourth .image img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 10px solid #bcbbbb;
+  transition: 0.3s;
+}
+
+.fourth-section .fourth .image h1 {
+  text-align: center;
+  margin-top: 5px; /* This positions the name above the image initially */
+  font-family: mv boli;
+  color: #000;
+  z-index: 1;
+  opacity: 0; /* Initially hide the name */
+  transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+.fourth-section .fourth .image:hover h1 {
+  opacity: 1; /* Show the name when the image is hovered over */
+}
+.fourth-section .fourth .text {
+  font-size: 19px;
+}
+.fourth-section .text h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.fourth-section .text h1 b {
+  margin: 0 7px;
+  color: #fac001;
+  font-family: mv boli;
+}
+.fourth-section .text {
+  padding: 60px;
+}
+/* footer */
+
+footer {
+  width: 100%;
+
+  padding: 30px 0 0 20px;
+  background: #eeee;
+}
+footer .footer-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+footer .footer-main .footer-tag a {
+  text-decoration: none;
+  color: #000;
+}
+footer .footer-main .footer-tag {
+  font-size: 20px;
+  text-align: center;
+}
+footer .footer-main .footer-tag h1 {
+  color: #000;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+footer .footer-main .footer-tag p {
+  margin: 10px 0;
+}
+footer .footer-main .footer-tag i {
+  margin: 0 5px;
+  cursor: pointer;
+}
+footer .footer-main .footer-tag i:hover {
+  color: #fac031;
+}
+footer .end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+footer .end span {
+  color: #fac031;
+  margin-left: 10px;
+}
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: #fac031;
+  border-radius: 15px;
+}
