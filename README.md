@@ -1,5 +1,4 @@
-<center> # The Artful Touch 🎨 </center>
-
+ # The Artful Touch 🎨
 The Artful Touch is a **frontend project** designed for an art store’s e-commerce platform.  
 It focuses on **showcasing products** in a visually pleasing way with a clean and responsive UI.
 
